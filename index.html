@@ -1,126 +1,437 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
 
-<head>
-	<title>mehdi behzadi</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link href="assets/css/style.css" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</head>
+    <title>Mehdi Behzadi | IT Manager & Web Systems Engineer</title>
+    <meta
+      name="description"
+      content="Mehdi Behzadi — IT Manager at Shiraz Hotel. Web development, data systems, and infrastructure leadership (hospitality & healthcare)."
+    />
 
-<body>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-	<header>
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-			<div class="container">
-				<a class="navbar-brand" href="#">behzadi</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="#">about</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">github</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-	<div class="container" style="margin-top:30px">
-		<div class="row">
-			<div class="col-sm-3">
-				<h2>About Me</h2>				
-				<img class="w-100" src="assets/images/0.jfif" alt="behzadi avatar" />
-				<p>If you love what you are doing, you will be successful.
-					that's me </p>
-				<h3>Some Skills</h3>
-				<ul class="nav nav-pills flex-column">
-					<li class="nav-item">
-						<a class="nav-link active" href="#">Active</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
-					</li>
-				</ul>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Behzadi</span>
+        </a>
 
-				<hr class="d-sm-none">
-			</div>
-			<div class="col-sm-9">
-				<h2>Hobbies</h2>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
+          <div class="nav-links" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#downloads">Resume</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+      <div class="header-glow" aria-hidden="true"></div>
+    </header>
 
-						<div class="item active">
-							<img src="la.jpg" alt="Los Angeles" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Los Angeles</h3>
-								<p>LA is always so much fun!</p>
-							</div>
-						</div>
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="kicker">IT Manager • Infrastructure • Web & Data Systems</p>
+            <h1>Mehdi Behzadi</h1>
+            <p class="lead">
+              Results-driven IT leader with over a decade of experience designing, operating, and securing large-scale
+              IT environments and business-critical systems — with hands-on delivery in web development and
+              data-driven reporting.
+            </p>
 
-						<div class="item">
-							<img src="chicago.jpg" alt="Chicago" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Chicago</h3>
-								<p>Thank you, Chicago!</p>
-							</div>
-						</div>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#downloads">Download Resume</a>
+            </div>
 
-						<div class="item">
-							<img src="ny.jpg" alt="New York" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>New York</h3>
-								<p>We love the Big Apple!</p>
-							</div>
-						</div>
+            <div class="hero-meta">
+              <div class="meta-chip">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Shiraz, Fars Province, Iran</span>
+              </div>
+              <div class="meta-chip">
+                <span class="meta-label">Current</span>
+                <span class="meta-value">IT Manager, Shiraz Hotel</span>
+              </div>
+            </div>
 
-					</div>
+            <div class="social">
+              <a class="social-link" href="https://linkedin.com/in/mbehzadi" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+              <a class="social-link" href="https://github.com/mbehzadi" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="social-link" href="https://x.com/kharabati" target="_blank" rel="noreferrer">X</a>
+            </div>
+          </div>
 
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
+          <div class="hero-card reveal">
+            <div class="hero-card-inner">
+              <img class="avatar" src="assets/images/0.jfif" alt="Portrait photo" loading="eager" />
+              <div class="hero-card-body">
+                <h2 class="hero-card-title">Focus Areas</h2>
+                <ul class="checklist">
+                  <li>Hospitality & healthcare IT operations</li>
+                  <li>Large-scale networks (multi-site, thousands of endpoints)</li>
+                  <li>PBX systems (Issabel), gateways, E1 integration</li>
+                  <li>Reporting, dashboards, ETL routines</li>
+                  <li>Containerized & open-source platforms</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hero-card-border" aria-hidden="true"></div>
+          </div>
+        </div>
 
-	<footer class="bg-dark text-center text-light b-0">
-		<p class="p-0 m-0">&copy; behzadi.github.io</p>
-	</footer>
+        <div class="hero-bg" aria-hidden="true">
+          <div class="blob blob-a"></div>
+          <div class="blob blob-b"></div>
+          <div class="gridlines"></div>
+        </div>
+      </section>
 
-</body>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>About</h2>
+            <p>
+              I lead end-to-end IT delivery across infrastructure, communications, business applications, data
+              protection, and operational reporting — while still building and shipping software when needed.
+            </p>
+          </div>
 
+          <div class="cards two-col">
+            <article class="card reveal">
+              <h3>What I do</h3>
+              <ul class="bullets">
+                <li>Own availability, security, and continuity for business-critical systems</li>
+                <li>Build internal tools and operational dashboards for management insight</li>
+                <li>Deliver web applications with database-backed workflows</li>
+                <li>Implement PBX solutions for reservation and call-center operations</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <h3>Industries</h3>
+              <ul class="bullets">
+                <li>Hospitality: hotel operations, guest services support systems</li>
+                <li>Healthcare: PBX-enabled appointment reservation workflows</li>
+                <li>SMB/Enterprise: network operations, backups, access control</li>
+              </ul>
+              <div class="note">
+                This site is intentionally a single page for fast loading and easy scanning.
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Skills</h2>
+            <p>Core technologies and systems I work with across software, data, and operations.</p>
+          </div>
+
+          <div class="skill-grid">
+            <div class="skill-card reveal">
+              <h3>Web</h3>
+              <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">jQuery</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">PHP</span>
+              </div>
+            </div>
+
+            <div class="skill-card reveal">
+              <h3>Data</h3>
+              <div class="tags">
+                <span class="tag">SQL Server</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">SQL Server Compact</span>
+                <span class="tag">ETL routines</span>
+                <span class="tag">Dashboards & reporting</span>
+              </div>
+            </div>
+
+            <div class="skill-card reveal">
+              <h3>Infrastructure</h3>
+              <div class="tags">
+                <span class="tag">Linux servers</span>
+                <span class="tag">Monitoring & logging</span>
+                <span class="tag">Backups & replication</span>
+                <span class="tag">Multi-site networks</span>
+                <span class="tag">Access control</span>
+                <span class="tag">CCTV monitoring</span>
+              </div>
+            </div>
+
+            <div class="skill-card reveal">
+              <h3>Telephony</h3>
+              <div class="tags">
+                <span class="tag">Issabel PBX</span>
+                <span class="tag">Gateways</span>
+                <span class="tag">E1 integration</span>
+                <span class="tag">Call workflows</span>
+                <span class="tag">Reservation systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery reveal" aria-label="Work samples">
+            <h3 class="gallery-title">Work Samples</h3>
+            <p class="gallery-subtitle">
+              Example visuals for projects and systems (illustrative thumbnails). See details in the Projects section.
+            </p>
+            <div class="gallery-grid">
+              <img src="assets/images/project-datepicker.svg" alt="jQuery Persian Datepicker thumbnail" loading="lazy" />
+              <img src="assets/images/project-dashboards.svg" alt="Operations dashboards thumbnail" loading="lazy" />
+              <img src="assets/images/project-pbx.svg" alt="PBX reservation workflow thumbnail" loading="lazy" />
+              <img src="assets/images/project-accounting.svg" alt="Accounting software thumbnail" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Experience</h2>
+            <p>Selected roles and responsibilities (from LinkedIn export).</p>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3>IT Manager</h3>
+                  <div class="timeline-meta">Shiraz Hotel • Feb 2018 – Present • Shiraz, Iran</div>
+                </div>
+                <ul class="bullets">
+                  <li>Lead infrastructure, communications, and core systems supporting daily hotel operations</li>
+                  <li>Operate and secure a large-scale, multi-site network with thousands of connected endpoints</li>
+                  <li>Architect multi-site backup and replication for recoverability and business continuity</li>
+                  <li>Introduce containerized and open-source solutions for monitoring, logging, and deployment</li>
+                  <li>Oversee telephony, access control integration, CCTV monitoring, and application availability</li>
+                  <li>Deliver reporting and dashboards that turn operational data into management insights</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3>Network Administrator, Programmer</h3>
+                  <div class="timeline-meta">Shiraz Hotel • Nov 2014 – Jan 2018 • Shiraz, Iran</div>
+                </div>
+                <ul class="bullets">
+                  <li>Hands-on network administration and software development for internal business processes</li>
+                  <li>Designed data collection and ETL routines for reporting and analytics</li>
+                  <li>Improved maintainability and security using backup, permissions, and access-control best practices</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3>IT Consultant (Part-time, Hybrid)</h3>
+                  <div class="timeline-meta">Harir Baft Fars Company • Oct 2014 – Present • Shiraz, Iran</div>
+                </div>
+                <ul class="bullets">
+                  <li>Install PBX systems on Issabel, configure gateways, and connect E1 lines</li>
+                  <li>Develop PHP workflows for PBX-integrated phone reservation systems</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3>IT Consultant, PBX Configurator, Programmer (Part-time)</h3>
+                  <div class="timeline-meta">BuAli Hospital • Nov 2020 – Nov 2023 • Shiraz, Iran</div>
+                </div>
+                <ul class="bullets">
+                  <li>PBX deployment (Issabel), gateway configuration, and E1 integration</li>
+                  <li>Built PHP reservation workflows for patients via PBX-assisted call handling</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <h3>Freelance Web Developer</h3>
+                  <div class="timeline-meta">Freelance • Jan 2009 – Oct 2014</div>
+                </div>
+                <ul class="bullets">
+                  <li>Built websites and web applications using PHP, Node.js, HTML5, CSS3, and JavaScript</li>
+                  <li>Worked with SQL Server, MySQL, and PostgreSQL for data-driven applications</li>
+                  <li>Delivered WordPress websites including customization and maintenance</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Projects</h2>
+            <p>Open-source and production systems delivered across hospitality, healthcare, and business operations.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project reveal">
+              <img src="assets/images/project-datepicker.svg" alt="" loading="lazy" />
+              <div class="project-body">
+                <h3>jQuery Persian Datepicker (Open Source)</h3>
+                <div class="project-meta">Jan 2014 – Present</div>
+                <ul class="bullets">
+                  <li>Lightweight jQuery plugin for Persian date selection with configurable months/years</li>
+                  <li>Includes integrations for ASP.NET textbox usage</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="link" href="http://behzadi.github.io/persianDatepicker/" target="_blank" rel="noreferrer">
+                    View project
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <img src="assets/images/project-pbx.svg" alt="" loading="lazy" />
+              <div class="project-body">
+                <h3>PBX Reservation Workflow (Issabel + PHP)</h3>
+                <div class="project-meta">Consulting / Production</div>
+                <ul class="bullets">
+                  <li>PBX deployment on Issabel with gateway configuration and E1 connectivity</li>
+                  <li>PHP application to support phone-based reservation flows (patient appointments)</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <img src="assets/images/project-dashboards.svg" alt="" loading="lazy" />
+              <div class="project-body">
+                <h3>Operations Dashboards & Reporting</h3>
+                <div class="project-meta">Hospitality</div>
+                <ul class="bullets">
+                  <li>Data collection and ETL routines for internal reporting</li>
+                  <li>Management dashboards built from operational data sources</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <img src="assets/images/project-accounting.svg" alt="" loading="lazy" />
+              <div class="project-body">
+                <h3>Salis (Accounting Software)</h3>
+                <div class="project-meta">May 2012 – Present</div>
+                <ul class="bullets">
+                  <li>Simple accounting software for business use</li>
+                  <li>C# with SQL Server Compact</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="downloads">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Resume</h2>
+            <p>Download the latest resume generated for Word and plain text.</p>
+          </div>
+
+          <div class="cards two-col">
+            <article class="card reveal">
+              <h3>Downloads</h3>
+              <div class="download-row">
+                <a class="btn btn-primary" href="assets/resume/Mehdi_Behzadi_Resume.docx">Download DOCX</a>
+                <a class="btn btn-ghost" href="assets/resume/Mehdi_Behzadi_Resume.md">Download MD</a>
+              </div>
+              <p class="small">
+                Note: The MD file is plain text (no markdown symbols) so it stays copy-paste friendly.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <h3>Highlights</h3>
+              <ul class="bullets">
+                <li>Hospitality infrastructure leadership (multi-site, large endpoint count)</li>
+                <li>PBX systems and reservation workflows (Issabel + PHP)</li>
+                <li>Dashboards, ETL routines, and management reporting</li>
+                <li>Open-source work: jQuery Persian Datepicker</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Contact</h2>
+            <p>Best ways to reach me and see more of my work.</p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card reveal" href="https://linkedin.com/in/mbehzadi" target="_blank" rel="noreferrer">
+              <div class="contact-title">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/mbehzadi</div>
+            </a>
+            <a class="contact-card reveal" href="https://github.com/mbehzadi" target="_blank" rel="noreferrer">
+              <div class="contact-title">GitHub</div>
+              <div class="contact-value">github.com/mbehzadi</div>
+            </a>
+            <a class="contact-card reveal" href="https://x.com/kharabati" target="_blank" rel="noreferrer">
+              <div class="contact-title">X</div>
+              <div class="contact-value">@kharabati</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span class="footer-mark" aria-hidden="true"></span>
+          <span>© <span id="year"></span> Mehdi Behzadi</span>
+        </div>
+        <a class="to-top" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
